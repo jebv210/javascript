@@ -24,11 +24,26 @@ botones.forEach(boton => {
         }
 
         if(boton.id === "Igual"){
+            
+            //if(boton.id === "Igual"){
+            //    try {
+            //        pantalla.textContent = eval(pantalla.textContent);
+            //    }
+            //    catch {
+            //        pantalla.textContent = "¡Error!"
+            //    }
+            //    return;
+            //}
+
             try {
-                pantalla.textContent = eval(pantalla.textContent);
-            }
-            catch {
-                pantalla.textContent = "¡Error!"
+                const resultado = eval(pantalla.textContent);
+                if (isFinite(resultado)) { //se debe a que el resultado lo puede llegar a tomar como indefinido es por eso que no muestra nada
+                    pantalla.textContent = resultado;
+                } else {
+                    pantalla.textContent = "¡Error!";
+                }
+            } catch {
+                pantalla.textContent = "¡Error!";
             }
             return;
         }
@@ -36,7 +51,7 @@ botones.forEach(boton => {
         //console.log(boton.textContent);
         const botonOn =  boton.textContent;
 
-        if (pantalla.textContent === "0") {
+        if (pantalla.textContent === "0"  || pantalla.textContent === "¡Error!") {
             pantalla.textContent = botonOn;
         } else {
             pantalla.textContent += botonOn;
@@ -45,3 +60,4 @@ botones.forEach(boton => {
         
     })
 })
+
