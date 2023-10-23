@@ -24,7 +24,7 @@ botones.forEach(boton => {
         }
 
         if(boton.id === "Igual"){
-            
+                  
             //if(boton.id === "Igual"){
             //    try {
             //        pantalla.textContent = eval(pantalla.textContent);
@@ -34,8 +34,12 @@ botones.forEach(boton => {
             //    }
             //    return;
             //}
+            if((pantalla.textContent).charAt((pantalla.textContent).length - 1) === '/' || pantalla.textContent.includes("//")){
+                pantalla.textContent = "¡Error!";
+            }
 
             try {
+
                 const resultado = eval(pantalla.textContent);
                 if (isFinite(resultado)) { //se debe a que el resultado lo puede llegar a tomar como indefinido es por eso que no muestra nada
                     pantalla.textContent = resultado;
