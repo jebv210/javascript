@@ -1,0 +1,112 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(83, 200, 220);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box1{
+    font-size: 50px;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+.titulo{
+    font-size: 60px;
+    color: red;
+    position: relative;
+    bottom: 50px;
+}
+
+.cuentaRegresiva{
+    color: white;
+    width: 700px;
+    display: flex;
+    justify-content: center;
+}
+
+.tiempo{
+    width: 150px;
+    height: 80px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 70px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: inset 0px 2px 10px rgba(255, 255, 255, 0.739);
+}
+
+.tiempoL{
+    width: 700px;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    color: white;
+    margin-top: 100px;
+}
+.letra{
+    font-size: 25px;
+    margin: 0 auto;
+}
+
+.botones{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 100px;
+}
+
+.santa{
+    font-size: 200px;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../img/papaNoel.png);
+    background-size: cover;
+}
+.santa.on{
+    font-size: 200px;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    background-image: url(../img/papaNoelgif.gif);
+    background-size: cover;
+}
+
+.btn{
+    background-color: Red;
+    width: 130px;
+    height: 80px;
+    position: relative;
+    display: flex;
+    color: white;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: .5s;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
