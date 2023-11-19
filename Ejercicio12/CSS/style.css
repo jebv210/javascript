@@ -17,7 +17,7 @@
     display: block;
     width: 26px;
     height: 1px;
-    background-color: black;
+    background-color: red;
     margin-top: 6px;
     transition: all 600ms;
     transform-origin: 0px 100%;
